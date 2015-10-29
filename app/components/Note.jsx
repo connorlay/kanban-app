@@ -17,7 +17,7 @@ export default class Note extends React.Component {
 
   renderEdit () {
     return (
-      <input type="text"
+      <input type='text'
              autoFocus={true}
              defaultValue={this.props.task}
              onBlur={this.finishEdit}
@@ -31,7 +31,7 @@ export default class Note extends React.Component {
 
     return (
       <div onClick={this.edit}>
-        <span className="task">{this.props.task}</span>
+        <span className='task'>{this.props.task}</span>
         {onDelete ? this.renderDelete() : null}
       </div>
     )
@@ -39,7 +39,7 @@ export default class Note extends React.Component {
 
   renderDelete () {
     return (
-      <button className="delete" onClick={this.props.onDelete}>x</button>
+      <button className='delete' onClick={this.props.onDelete}>x</button>
     )
   }
 
